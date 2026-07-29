@@ -1,0 +1,62 @@
+<div *ngIf="errorMessage$ | async as errorMessage" style="color:red">
+    {{ errorMessage }}
+</div>
+
+<div *ngIf="isLoading$ | async">
+    Loading Courses...
+</div>
+
+<input type="text" [(ngModel)]="searchTerm" placeholder="Search Course">
+
+<button (click)="searchCourse()">
+    Search
+</button>
+
+<br><br>
+
+<table border="1" cellpadding="10">
+
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Code</th>
+        <th>Credits</th>
+        <th>Action</th>
+    </tr>
+
+    <tr *ngFor="let course of courses$ | async; trackBy: trackByCourseId">
+
+        <td>{{ course.id }}</td>
+
+        <td>{{ course.name }}</td>
+
+        <td>{{ course.code }}</td>
+
+        <td>{{ course.credits }}</td>
+
+        <td>
+
+            <button (click)="goToCourse(course)">
+                View
+            </button>
+
+            <button (click)="delete(course.id)" style="margin-left: 5px; color: red;">
+                Delete
+            </button>
+
+        </td>
+
+    </tr>
+
+</table>
+
+<br>
+<hr>
+
+<h3>Add a New Course</h3>
+<div>
+    <input type="text" [(ngModel)]="newCourse.name" placeholder="Course Name" style="margin-right: 5px;">
+    <input type="text" [(ngModel)]="newCourse.code" placeholder="Course Code" style="margin-right: 5px;">
+    <input type="number" [(ngModel)]="newCourse.credits" placeholder="Credits" style="margin-right: 5px;">
+    <button (click)="addCourse()">Add Course</button>
+</div>

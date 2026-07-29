@@ -1,0 +1,81 @@
+{
+  "courses": [
+    {
+      "id": "1",
+      "name": "Angular",
+      "code": "ANG101",
+      "credits": 4,
+      "gradeStatus": "passed"
+    },
+    {
+      "id": "2",
+      "name": "Java",
+      "code": "JAVA102",
+      "credits": 3,
+      "gradeStatus": "failed"
+    },
+    {
+      "id": "3",
+      "name": "Python",
+      "code": "PY103",
+      "credits": 4,
+      "gradeStatus": "pending"
+    },
+    {
+      "name": "Spring Boot",
+      "code": "SB101",
+      "credits": 4,
+      "gradeStatus": "pending",
+      "id": "PbI886tJwdo"
+    },
+    {
+      "name": "Go Lang",
+      "code": "GO101",
+      "credits": 3,
+      "gradeStatus": "pending",
+      "id": "uJNlgf5z2uE"
+    },
+    {
+      "name": "Spring Boot",
+      "code": "SB101",
+      "credits": 4,
+      "gradeStatus": "pending",
+      "id": "Lu01XEYjnUc"
+    },
+    {
+      "name": "Spring Boot",
+      "code": "SB101",
+      "credits": 4,
+      "gradeStatus": "pending",
+      "id": "s-IfWdZc39o"
+    },
+    {
+      "name": "Spring Boot",
+      "code": "SB101",
+      "credits": 4,
+      "gradeStatus": "pending",
+      "id": "YdBmO_vKugs"
+    },
+    {
+      "name": "Spring Boot",
+      "code": "SB101",
+      "credits": 4,
+      "gradeStatus": "pending",
+      "id": "fvskyFj7IFo"
+    }
+  ],
+  "students": [
+    {
+      "id": "1",
+      "name": "Alice",
+      "courseId": 1
+    },
+    {
+      "id": "2",
+      "name": "Bob",
+      "courseId": 2
+    }
+  ],
+  "enrollments": [],
+  "$schema": "./node_modules/json-server/schema.json"
+}

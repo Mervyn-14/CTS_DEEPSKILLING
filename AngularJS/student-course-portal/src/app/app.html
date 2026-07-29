@@ -1,0 +1,17 @@
+<div *ngIf="loadingService.isLoading$ | async"
+     style="background:#1976d2;
+            color:white;
+            padding:10px;
+            text-align:center;">
+
+    Loading...
+
+</div>
+
+<app-header></app-header>
+
+<app-course-summary-widget></app-course-summary-widget>
+
+<app-notification></app-notification>
+
+<router-outlet></router-outlet>
